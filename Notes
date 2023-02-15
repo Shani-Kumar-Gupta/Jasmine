@@ -6,3 +6,7 @@ Answer: Unit testing is testing individual unit (smallest testable part of your 
         3. To maintain the code quality and bug free
         4. Changes occurs quickly.
         5. Unit testing provides you the best documentation (Act as a documentation)
+
+2. Testing Frameworks - Jasmine (Angular), Jest (ReactJS), mocha and many more....
+
+3. Jasmine
