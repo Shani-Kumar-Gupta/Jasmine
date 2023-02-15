@@ -1,2 +1,8 @@
 1. What is Unit Testing and why we need to do this?
-Answer: Unit testing is testing individual unit of code. eg. function
+Answer: Unit testing is testing individual unit (smallest testable part of your code) of code. eg. function, service, component
+        We need to the unit testing because-
+        1. Trust changes make on existing code.
+        2. If we don't have unit testing in our code, we need to test it manually while making any changes
+        3. To maintain the code quality and bug free
+        4. Changes occurs quickly.
+        5. Unit testing provides you the best documentation (Act as a documentation)
