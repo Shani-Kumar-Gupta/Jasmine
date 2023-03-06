@@ -6,6 +6,10 @@ function calc(event) {
   const numberA = +values[0];
   const numberB = +values[1];
   const operation = inputValue.match(expression);
+  if (isNaN(numberA) || isNaN(numberB) || operation == null) {
+    updateResult('Operation not recognized');
+    return;
+  }
   const operator = operation[0];
 
   const cal = new Calculator();
