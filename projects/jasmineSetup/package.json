@@ -1,0 +1,17 @@
+{
+  "name": "jasminesetup",
+  "version": "1.0.0",
+  "description": "Jasmine Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "jasmine"
+  ],
+  "author": "Shani Kumar Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  }
+}
