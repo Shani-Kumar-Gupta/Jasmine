@@ -21,3 +21,7 @@ Answer: Unit testing is testing individual unit (smallest testable part of your 
 
 5. Suites - A suites is a group of spec or tests. If you have lot of tests you will group them and that group is called suites.
           - It will organize the tests.
+
+6. Spec file (*.spec.js) having -> Test Suites (Group of spec) having -> Spec or test cases (Group of expectations)
+
+7. What is Expectations -> you can think of it as Assertions -> Assertions is just a statement -> Result of a statement either true or false

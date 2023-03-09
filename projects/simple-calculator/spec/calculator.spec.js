@@ -10,6 +10,13 @@ describe('Description || Title : calculator.js', function () {
   // Test Cases or Specs Cases - 
   it('Calculator.js : Should add the two numbers', function () {
     // TODO: Expectations
+    // How to write Expectation in Jasmine
+    // Expect 5 + 5 to be 10
+    // expect(5 + 5).toBe(10);
+    const calc = new Calculator();
+    calc.add(5);
+    // expect total to be 5
+    expect(calc.total).toBe(5);
   });
 
   it('Claculator.js : Should subtract the two numbers', function () {
