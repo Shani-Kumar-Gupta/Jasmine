@@ -9,4 +9,14 @@ Answer: Unit testing is testing individual unit (smallest testable part of your 
 
 2. Testing Frameworks - Jasmine (Angular), Jest (ReactJS), mocha and many more....
 
-3. Jasmine
+3. Jasmine - Behaviour Driven Testing Framework
+
+4. Testing file naming convention-
+        testing file extension name-
+          1. *.spec.js
+          2. *.test.js
+        Naming convention-
+          1. (Target file name).spec.js
+          2. (Target file name).test.js
+
+5. Suites - A suites is a group of spec or tests. If you have lot of tests you will group them and that group is called suites.
