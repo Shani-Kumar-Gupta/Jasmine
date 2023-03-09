@@ -20,3 +20,4 @@ Answer: Unit testing is testing individual unit (smallest testable part of your 
           2. (Target file name).test.js
 
 5. Suites - A suites is a group of spec or tests. If you have lot of tests you will group them and that group is called suites.
+          - It will organize the tests.
