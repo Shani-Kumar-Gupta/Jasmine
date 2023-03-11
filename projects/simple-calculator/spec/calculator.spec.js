@@ -101,4 +101,11 @@ describe('Description || Title : calculator.js', function () {
     expect(calc.add).toBeDefined();
     expect(calc.sub).toBeUndefined();
   });
+
+  // toBeNull() Matcher
+  it('can override total value', () => {
+    const calc = new Calculator();
+    calc.total = null;
+    expect(calc.total).toBeNull();
+  })
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);
