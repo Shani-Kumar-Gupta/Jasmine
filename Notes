@@ -25,3 +25,7 @@ Answer: Unit testing is testing individual unit (smallest testable part of your 
 6. Spec file (*.spec.js) having -> Test Suites (Group of spec) having -> Spec or test cases (Group of expectations)
 
 7. What is Expectations -> you can think of it as Assertions -> Assertions is just a statement -> Result of a statement either true or false
+
+8. Passing or Failure Spec? When we can say that spec is passing or failure??
+Ans: Passing Spec -> Spec with all the true expectations is a passing spec.
+     Failure Spec -> Spec having one or more false expectations is a failure spec.
