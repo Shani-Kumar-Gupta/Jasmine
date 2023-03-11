@@ -1,4 +1,4 @@
 /* Jasmine Matcher's -> Which implements the boolean comparison between Actual and Expected Value */
 
 1. toBe()
-2. 
+2. toEqual()
