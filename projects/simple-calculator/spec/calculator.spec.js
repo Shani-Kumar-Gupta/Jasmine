@@ -124,4 +124,16 @@ describe('Description || Title : calculator.js', function () {
     calc.multiply('a');
     expect(calc.total).toBeNaN();
   });
+
+  it('should throw error when divide by zero', () => {
+    const calc = new Calculator();
+    calc.total = 10;
+    expect(function () {
+      calc.divide(0)
+    }).toThrow();
+
+    // expect(function () {
+    //   calc.divide(0)
+    // }).toThrow(new Error('Number cannot be zero'));
+  });
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);
