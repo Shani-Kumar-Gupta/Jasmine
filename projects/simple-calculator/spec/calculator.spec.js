@@ -107,5 +107,13 @@ describe('Description || Title : calculator.js', function () {
     const calc = new Calculator();
     calc.total = null;
     expect(calc.total).toBeNull();
-  })
+  });
+
+  // toContain() Matcher
+  it('should have the calculator constructor', () => {
+    const calc = new Calculator();
+    let arr = [1, 2, 3, 4];
+    expect(arr).toContain(3);
+    expect(calc.constructor.name.toLowerCase()).toContain('calc');
+  });
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);

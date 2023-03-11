@@ -8,3 +8,4 @@
 6. toBeUndefined()
 7. toBeDefined()
 8. toBeNull()
+9. toContain()
