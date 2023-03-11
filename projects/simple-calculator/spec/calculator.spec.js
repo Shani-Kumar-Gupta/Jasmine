@@ -76,4 +76,11 @@ describe('Description || Title : calculator.js', function () {
     let person2 = { name: 'Shani' };
     expect(person1).toEqual(person2);
   });
+
+  // not matcher
+  it('should be unique calculator object', () => {
+    const calc1 = new Calculator();
+    const calc2 = new Calculator();
+    expect(calc1).not.toBe(calc2);
+  })
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);

@@ -4,3 +4,4 @@
 2. toEqual()
 3. toBeTruthy()
 4. toBeFalsy()
+5. not -> negating the matcher -> we can use with any matcher
