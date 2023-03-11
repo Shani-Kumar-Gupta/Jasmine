@@ -49,4 +49,15 @@ describe('Description || Title : calculator.js', function () {
     calc.divide(2);
     expect(calc.total).toBe(5);
   }); // Disabled Spec
+
+  it('should initialize the total', () => {
+    const calc = new Calculator();
+    expect(calc.total).toBe(0); // === and only check for primitive data types
+    // expect(calc.total).toBe('0');
+
+    // expect non-prminitive to be non-primitive
+    //let person1 = { name: 'Shani' };
+    //let person2 = { name: 'Shani' };
+    //expect(person1).toBe(person2); // To check deep equality use toEqual() matcher
+  })
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);
