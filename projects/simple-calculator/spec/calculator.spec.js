@@ -82,5 +82,23 @@ describe('Description || Title : calculator.js', function () {
     const calc1 = new Calculator();
     const calc2 = new Calculator();
     expect(calc1).not.toBe(calc2);
-  })
+  });
+
+  // toBeUndefined() Matcher
+  it('should be undefined', () => {
+    const calc = new Calculator();
+    // expect(calc.total).toBeUndefined();
+  });
+
+  // toBeDefined() Matcher
+  it('should be defined', () => {
+    const calc = new Calculator();
+    expect(calc.total).toBeDefined();
+  });
+
+  it('should have common method', () => {
+    const calc = new Calculator();
+    expect(calc.add).toBeDefined();
+    expect(calc.sub).toBeUndefined();
+  });
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);

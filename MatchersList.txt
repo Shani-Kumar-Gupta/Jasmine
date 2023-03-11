@@ -5,3 +5,6 @@
 3. toBeTruthy()
 4. toBeFalsy()
 5. not -> negating the matcher -> we can use with any matcher
+6. toBeUndefined()
+7. toBeDefined()
+8. toBeNull()
