@@ -53,6 +53,7 @@ describe('Description || Title : calculator.js', function () {
   // toBe() Matcher
   it('should initialize the total', () => {
     const calc = new Calculator();
+    expect(calc.total).toBeFalsy();
     expect(calc.total).toBe(0); // === and only check for primitive data types
     // expect(calc.total).toBe('0');
 
@@ -67,6 +68,8 @@ describe('Description || Title : calculator.js', function () {
     const calc1 = new Calculator();
     const calc2 = new Calculator();
     // expect(calc1).toBe(calc2);
+    expect(calc1).toBeTruthy();
+    expect(calc2).toBeTruthy();
     expect(calc1).toEqual(calc2); // To check deep equality use toEqual() matcher
 
     let person1 = { name: 'Shani' };
