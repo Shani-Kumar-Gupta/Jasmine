@@ -9,3 +9,4 @@
 7. toBeDefined()
 8. toBeNull()
 9. toContain()
+10. toBeNaN()

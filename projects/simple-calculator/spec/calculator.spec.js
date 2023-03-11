@@ -116,4 +116,12 @@ describe('Description || Title : calculator.js', function () {
     expect(arr).toContain(3);
     expect(calc.constructor.name.toLowerCase()).toContain('calc');
   });
+
+  // toBeNaN() Matcher
+  it('does not handle NaN for multiplication', () => {
+    const calc = new Calculator();
+    calc.total = 10;
+    calc.multiply('a');
+    expect(calc.total).toBeNaN();
+  });
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);
