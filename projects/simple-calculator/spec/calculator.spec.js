@@ -19,6 +19,8 @@ describe('Description || Title : calculator.js', function () {
     calc.add(5);
     // expect total to be 5
     expect(calc.total).toBe(5);
+    // calc.total -> Actual Value
+    // toBe(5) -> Expected Value
     calc.add(10);
     expect(calc.total).toBe(15);
   });

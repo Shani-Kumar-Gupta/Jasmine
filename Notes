@@ -36,3 +36,10 @@ Ans. Disable Spec -> It's a spec that report as the pending spec and will not ex
      Use below menthod to disable the suite and spec-
      1. xdescibe('Title', () => {}) // Disable Suite
      2. xit('Title', () => {}) // Disable Spec
+
+10. What is Matchers and why we use matchers for expectations in Jasmine?
+Ans: A matcher is just a function and this function implements the boolean comparison between the actual value and expected value.
+     Matcher is responsible to report to jasmine if the expectation is true or false.
+     Matcher deside whether the spec is passing or failure spec
+    Example:
+      1. toBe() -> Actual Value === Expected Value (under the hood)
