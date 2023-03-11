@@ -40,11 +40,11 @@ describe('Description || Title : calculator.js', function () {
     expect(calc.total).toBe(10);
   });
 
-  it('Calculator.js : Should divide the two numbers', function () {
+  xit('Calculator.js : Should divide the two numbers', function () {
     // TODO: Expectations
     const calc = new Calculator();
     calc.total = 10;
     calc.divide(2);
     expect(calc.total).toBe(5);
-  });
+  }); // Disabled Spec
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);

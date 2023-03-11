@@ -29,3 +29,10 @@ Answer: Unit testing is testing individual unit (smallest testable part of your 
 8. Passing or Failure Spec? When we can say that spec is passing or failure??
 Ans: Passing Spec -> Spec with all the true expectations is a passing spec.
      Failure Spec -> Spec having one or more false expectations is a failure spec.
+
+9. How to disable the Suite and Spec?
+Ans. Disable Spec -> It's a spec that report as the pending spec and will not execute
+     When to disable the spec -> 1. Doing some logic changes in the code 2. While TDD development
+     Use below menthod to disable the suite and spec-
+     1. xdescibe('Title', () => {}) // Disable Suite
+     2. xit('Title', () => {}) // Disable Spec
