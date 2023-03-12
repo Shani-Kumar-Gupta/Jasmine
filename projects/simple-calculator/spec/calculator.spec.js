@@ -125,6 +125,7 @@ describe('Description || Title : calculator.js', function () {
     expect(calc.total).toBeNaN();
   });
 
+  // toThrow() Matcher
   it('should throw error when divide by zero', () => {
     const calc = new Calculator();
     calc.total = 10;
@@ -135,5 +136,26 @@ describe('Description || Title : calculator.js', function () {
     // expect(function () {
     //   calc.divide(0)
     // }).toThrow(new Error('Number cannot be zero'));
+  });
+
+  // toThrowError() Matcher
+  it('should throw error when divide by zero with message', () => {
+    const calc = new Calculator();
+    calc.total = 10;
+    expect(function () {
+      calc.divide(0)
+    }).toThrowError();
+    expect(function () {
+      calc.divide(0)
+    }).toThrowError('Number cannot be zero');
+    expect(function () {
+      calc.divide(0)
+    }).toThrowError(Error, 'Number cannot be zero');
+    expect(function () {
+      calc.divide(0)
+    }).toThrowError(AirthmeticError, 'Number cannot be zero');
+    // expect(function () {
+    //   calc.divide(0)
+    // }).toThrowError(BadRequestError, 'Number cannot be zero');
   });
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);

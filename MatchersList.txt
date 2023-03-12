@@ -11,3 +11,4 @@
 9. toContain()
 10. toBeNaN()
 11. toThrow()
+12. toThrowError()
