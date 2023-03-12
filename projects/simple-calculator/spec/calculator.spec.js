@@ -180,4 +180,13 @@ describe('Description || Title : calculator.js', function () {
     // calc.total = undefined;
     // expect(calc.total).toEqual(jasmine.anything());
   });
+
+  // any Matcher
+  it('should be an instance', function () {
+    const calc = new Calculator();
+    calc.total = 10;
+    expect(calc).toEqual(jasmine.any(Calculator));
+    expect(calc).toEqual(jasmine.any(Object));
+    expect(calc.total).toEqual(jasmine.any(Number));
+  })
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);
