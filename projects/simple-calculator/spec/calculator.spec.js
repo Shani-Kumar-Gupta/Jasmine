@@ -168,5 +168,16 @@ describe('Description || Title : calculator.js', function () {
     expect(typeof calc.total).toBe('number');
     expect(typeof calc.total).toMatch('number');
     expect(typeof calc.total).toMatch('ber');
-  })
+  });
+
+  // Asymmetric Matcher
+  it('should return total as value - Asymmetric Matcher', function () {
+    const calc = new Calculator();
+    calc.total = 10;
+    expect(calc.total).toEqual(10);
+    expect(calc.total).toEqual(jasmine.anything());
+
+    // calc.total = undefined;
+    // expect(calc.total).toEqual(jasmine.anything());
+  });
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);

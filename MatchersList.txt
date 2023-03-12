@@ -13,3 +13,7 @@
 11. toThrow()
 12. toThrowError()
 13. toMatch() -> to matching the actual data using regular expression
+
+/* Asymmetric Matcher - Jasmine.anything */
+1. jasmine.anything() - used with toEqual(), toContain() and toHaveBeenCalledWith() - It should not null or undefiend
+2. jasmine.any()
