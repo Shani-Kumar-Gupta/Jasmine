@@ -43,3 +43,20 @@ Ans: A matcher is just a function and this function implements the boolean compa
      Matcher deside whether the spec is passing or failure spec
     Example:
       1. toBe() -> Actual Value === Expected Value (under the hood)
+
+12. Custom Matcher - It's root is a comparison function that takes actual value and expected value.
+                   - Should return an Object with a compare function (that be called to check the expectation)
+                   - The compare function must return result as object with a pass property that is a boolean result of the matcher.
+                   const customMatcher = {
+                    return {
+                         compare: function(actual, expected) {
+                              return  {
+                                   Pass: true,
+                                   Message: 'Some Message here'
+                              }
+                         }
+                    }
+                   }
+
+13. How we can use Custom Matcher in the spec?
+Ans: Register the custom matcher with jasmine.addMatchers(). Once it's registered with jasmine, it will be available on any expectation.
