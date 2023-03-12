@@ -17,3 +17,5 @@
 /* Asymmetric Matcher - Jasmine.anything */
 1. jasmine.anything() - used with toEqual(), toContain() and toHaveBeenCalledWith() - It should not null or undefiend
 2. jasmine.any() - To check the instance of the class or constructor
+3. jasmine.objectContaining()
+4. jasmine.stringContaining()

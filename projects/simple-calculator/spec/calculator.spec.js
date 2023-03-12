@@ -188,5 +188,13 @@ describe('Description || Title : calculator.js', function () {
     expect(calc).toEqual(jasmine.any(Calculator));
     expect(calc).toEqual(jasmine.any(Object));
     expect(calc.total).toEqual(jasmine.any(Number));
-  })
+  });
+
+  // jasmine.objectContaining() and jasmine.stringContaining() Matcher
+  it('should contain the total as key', function () {
+    const calc = new Calculator();
+    calc.total = 10;
+    expect(calc).toEqual(jasmine.objectContaining({ total: 10 }));
+    expect(typeof calc.total).toEqual(jasmine.stringContaining('number'));
+  });
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);
