@@ -158,4 +158,15 @@ describe('Description || Title : calculator.js', function () {
     //   calc.divide(0)
     // }).toThrowError(BadRequestError, 'Number cannot be zero');
   });
+
+  // toMatch() Matcher
+  it('should return total a number', function () {
+    const calc = new Calculator();
+    calc.add(10);
+    expect(calc.total).toBe(10);
+    expect(calc.total).toMatch(/-?\d+/);
+    expect(typeof calc.total).toBe('number');
+    expect(typeof calc.total).toMatch('number');
+    expect(typeof calc.total).toMatch('ber');
+  })
 }); // It's a method to create the suite - describe(arg1 -> 'Title or description', arg2 -> Anonymous function);

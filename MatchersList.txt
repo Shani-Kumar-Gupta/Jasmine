@@ -12,3 +12,4 @@
 10. toBeNaN()
 11. toThrow()
 12. toThrowError()
+13. toMatch() -> to matching the actual data using regular expression
