@@ -1,0 +1,8 @@
+1. Unit Testing and Why unit testing?
+2. What and why Jasmine Testing Framework?
+3. Test or Spec Suite - describe()
+4. Test or Spec Cases - it()
+5. Disable test or spec suite and cases - xdescribe() and xit()
+5. Expectations - expect()
+6. Matcher
+7. Asymmetric Matcher
