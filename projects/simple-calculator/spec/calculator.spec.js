@@ -183,11 +183,13 @@ describe('Description || Title : calculator.js', function () {
 
   // any Matcher
   it('should be an instance', function () {
+    jasmine.addMatchers(CustomMatcher);
     const calc = new Calculator();
     calc.total = 10;
     expect(calc).toEqual(jasmine.any(Calculator));
     expect(calc).toEqual(jasmine.any(Object));
     expect(calc.total).toEqual(jasmine.any(Number));
+    expect(calc).toBeCalculator(); // Custom Matcher
   });
 
   // jasmine.objectContaining() and jasmine.stringContaining() Matcher
