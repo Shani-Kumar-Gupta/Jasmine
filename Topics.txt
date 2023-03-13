@@ -7,3 +7,4 @@
 6. Matcher
 7. Asymmetric Matcher
 8. Custom Matcher
+9. Nested Suite
