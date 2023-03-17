@@ -60,3 +60,20 @@ Ans: A matcher is just a function and this function implements the boolean compa
 
 13. How we can use Custom Matcher in the spec?
 Ans: Register the custom matcher with jasmine.addMatchers(). Once it's registered with jasmine, it will be available on any expectation.
+
+14. Setup and Teardown -
+     - To organize the spec or test more 
+     - Setup and Teardown is a part of suite life cycle
+
+     SETUP - 
+     - Setup is where you place prerequisites for your specs. It executes before specs are run
+     - Jasmine offers two methods for setup - 
+          - beforeEach -> executed before each spec in the suite in which it is called
+          - beforeAll -> exceuted only once for all the specs in the suite
+     
+     TEARDOWN -
+     - Teardown in the life cycle of our suite is used to clean up the steps for your specs.
+     - It is called after all the specs have been exceuted
+     - Jsmine offers two methods for Teardown
+          - afterEach -> executed after each spec in the suite in which it is called
+          - afterAll -> executes only once after all the specs in the suite 
