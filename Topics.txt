@@ -9,3 +9,5 @@
 8. Custom Matcher
 9. Nested Suite
 10. Setup and Teardown - To organize our specs and tests more
+11. Setup methods - beforeEach and beforeAll
+12. Teardown methods - afterEach and afterAll
