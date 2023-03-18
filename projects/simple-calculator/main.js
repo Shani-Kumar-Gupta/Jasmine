@@ -7,7 +7,7 @@ function calc(event) {
   const numberB = +values[1];
   const operation = inputValue.match(expression);
   if (isNaN(numberA) || isNaN(numberB) || operation == null) {
-    updateResult('Operation not recognized');
+    updateResult('Expression not recognized');
     return;
   }
   const operator = operation[0];
@@ -28,6 +28,8 @@ function calc(event) {
     case '/':
       result = cal.divide(numberB);
       break;
+    default:
+      result = "Operation not recognized"
   }
   // console.log("My Result: ", result, operator, '+' === operator, numberA, numberB);
   // document.getElementById("myResult").innerText = result;
@@ -40,4 +42,4 @@ function updateResult(result) {
     ele.innerText = result;
   }
 }
-document.getElementById('inputValue').addEventListener('change', calc);
+document.getElementById('inputValue') && document.getElementById('inputValue').addEventListener('change', calc);
