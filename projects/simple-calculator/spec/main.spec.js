@@ -9,6 +9,24 @@ describe('main.js', function () {
     it('Calls updateResult', function () { });
   });
   describe('updateResult()', function () {
-    it('add result to the dom element', function () { });
+
+    let element;
+    beforeAll(function () {
+      element = document.createElement('div');
+      element.setAttribute('id', 'myResult');
+      document.body.appendChild(element);
+    });
+
+    afterAll(function () {
+      const element = document.getElementById('myResult');
+      document.body.removeChild(element);
+    });
+    it('add result to the dom element', function () {
+      // const element = document.createElement('div');
+      // element.setAttribute('id', 'myResult');
+      // document.body.appendChild(element);
+      updateResult('5');
+      expect(element.innerText).toBe('5');
+    });
   });
 });
